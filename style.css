@@ -1,10 +1,10 @@
-*{
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-body{
+body {
   width: 100%;
   background: linear-gradient(to right, #0000ff, #f17cf1);
   font-size: 15px;
@@ -12,18 +12,20 @@ body{
   min-height: 100vh;
   display: grid;
   place-items: center;
+  font-family: "Montserrat";
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url(/assets/Montserrat-Regular.ttf);
 }
 
-h1{
+h1 {
   font-size: 18px;
 }
 
-
-
-
-.container{
+.container {
   height: 80vh;
-  min-height: 80vh;
+  max-height: 600px;
   border-radius: 12px;
   background-color: white;
   width: 300px;
@@ -32,63 +34,80 @@ h1{
   justify-content: space-between;
   align-items: center;
   padding: 40px 20px;
-  
 }
-.flex{
+.flex {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   gap: 4px;
 }
-.icons{
+.icons {
   width: 14px;
+  background-color: transparent;
+  cursor: pointer;
 }
-.right{
+.right {
   float: right;
 }
-.left, label{
+.left,
+label {
   float: left;
 }
-.borderDiv{
+.borderDiv {
   border-bottom: 1px solid black;
   padding: 4px;
   width: 100%;
 }
 
-input{
+input {
   border: none;
   width: 100%;
   outline: none;
 }
 
-label{
-  padding-bottom: 10px;
-}
-
-.forgotPass{
+.forgotPass {
   text-align: right;
   padding-top: 20px;
   font-size: small;
 }
+.forgotPass:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
 
-button{
+button {
   border-radius: 20px;
   padding: 6px 20px;
   background: linear-gradient(to right, #0000ff, #f17cf1);
   border: none;
   color: white;
+  cursor: pointer;
 }
-.login{
+button:active {
+  background: #2f87cf;
+}
+.login {
   padding: 6px 60px;
 }
 
-.fa-facebook, .fa-twitter{
+.fa-facebook,
+.fa-twitter {
   color: #2f87cf;
 }
-.fa-google{
+.fa-google {
   color: red;
 }
-.fa, .fab{
+.fa,
+.fab {
   cursor: pointer;
+}
+
+.noSpace {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+  justify-content: center;
+
 }
