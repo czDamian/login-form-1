@@ -7,8 +7,7 @@
 body {
   width: 100%;
   background: linear-gradient(to right, #0000ff, #f17cf1);
-  font-size: 15px;
-  font-family: verdana;
+  font-size: 15px; 
   min-height: 100vh;
   display: grid;
   place-items: center;
@@ -109,5 +108,4 @@ button:active {
   gap: 12px;
   align-items: center;
   justify-content: center;
-
 }
