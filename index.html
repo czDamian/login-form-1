@@ -3,21 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="css/brands.min.css" />
-    <link rel="stylesheet" href="css/all.min.css" />
-    <link rel="stylesheet" href="css/fontawesome.min.css" />
-    <link rel="shortcut icon" href="user.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="shortcut icon" href="/assets/user.svg" type="image/x-icon" />
     <title>Login Form</title>
   </head>
   <body>
     <div>
       <div class="container">
-        <h1>Login</h1>
+        <h1>Login To Your Account</h1>
         <div>
           <label for="username">Username</label>
           <div class="flex borderDiv">
-            <i class="fa fa-user"></i>
+            <img src="assets/user.svg" alt="user" class="icons" />
             <input
               type="text"
               name="username"
@@ -28,7 +25,7 @@
         <div>
           <label for="password">Password</label>
           <div class="flex borderDiv">
-            <i class="fa fa-lock"></i>
+            <img src="assets/lock.svg" alt="password" class="icons" />
             <input
               type="text"
               name="password"
@@ -38,14 +35,19 @@
         </div>
 
         <button class="login">LOGIN</button>
-        <p>or sign up using</p>
-        <div class="flex">
-          <i class="fab fa-facebook"></i>
-          <i class="fab fa-twitter"></i>
-          <i class="fab fa-google"></i>
+        <div class="noSpace">
+
+          <p>or sign up using</p>
+          <div class="flex socials">
+            <img src="assets/facebook.svg" alt="facebook" class="icons" />
+            <img src="assets/twitter.svg" alt="twitter" class="icons" />
+            <img src="assets/google.svg" alt="google" class="icons" />
+          </div>
         </div>
-        <p>or sign up using</p>
-        <button>EMAIL</button>
+        <div class="noSpace">
+          <p>or continue with</p>
+          <button>EMAIL</button>
+        </div>
       </div>
     </div>
   </body>
