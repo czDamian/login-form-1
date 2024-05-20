@@ -3,11 +3,7 @@
   margin: 0;
   padding: 0;
 }
-
-@font-face {
-  font-family: "Montserrat";
-  src: url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 body {
   width: 100%;
@@ -16,7 +12,7 @@ body {
   min-height: 100vh;
   display: grid;
   place-items: center;
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
 }
 
 
